@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    font-family: "Martel Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #141414;
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 60% center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main .box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    inset: 0;
+    background-color: black;
+}
+
+.header {
+    margin: auto;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+    margin-top: 9px;
+}
+
+nav img {
+    color: rgb(229, 9, 20);
+    width: 148px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    position: relative;
+    color: white;
+    gap: 15px;
+    padding: 0 30px;
+    top: 12vmin;
+}
+
+.hero> :nth-child(1) {
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: -8px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+    margin: 10px 0px 16px;
+}
+
+.hero> :nth-child(4) {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+.main input::placeholder {
+    color: #ccc;
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn {
+    padding: 2px 20px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.11);
+    color: white;
+    border-radius: 44px;
+    border: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 50px;
+    font-size: 20px;
+    border: none;
+
+}
+
+.btn-red-sm {
+    background-color: white;
+    color: black;
+    border-radius: 44px;
+}
+
+
+.main input {
+    background-color: rgb(123 123 123);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    padding: 10px 110px 10px 20px;
+    font-size: 15px;
+    border-radius: 44px;
+    font-weight: 600;
+    color: white;
+}
+
+.first {
+    padding: 40px 0;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.first span {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 20px;
+    width: 100%;
+    overflow-x: auto;
+    margin: -20px;
+    margin-top: 10px;
+}
+
+.movie-card {
+    flex-shrink: 0;
+    height: 262px;
+    width: 131px;
+    display: flex;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.movie-card span {
+    position: absolute;
+    top: -15px;
+    left: -23px;
+    font-size: 65px;
+    font-weight: 900;
+    color: rgba(93, 86, 86, 0.953);
+    z-index: 5;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie1 {
+    background-image: url(assets/images/1.jpg);
+}
+
+.movie2 {
+    background-image: url(assets/images/pushpa2.jpg);
+}
+
+.movie3 {
+    background-image: url(assets/images/3.jpg);
+}
+
+.movie4 {
+    background-image: url(assets/images/squid_game.jpg);
+}
+
+.movie5 {
+    background-image: url(assets/images/VidaaMuyarchi.jpg);
+}
+
+.movie6 {
+    background-image: url(assets/images/Emergency.jpg);
+}
+
+.movie7 {
+    background-image: url(assets/images/Thandel.jpg);
+}
+
+.movie8 {
+    background-image: url(assets/images/Nadaaniyan.jpg);
+}
+
+.movie9 {
+    background-image: url(assets/images/Daaku_Maharaaj.jpg);
+}
+
+.movie10 {
+    background-image: url(assets/images/Dabba_Cartel.jpg);
+}
+
+.head span {
+    margin-left: 10px;
+}
+
+.secImg img {
+    width: 30vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    margin-left: -4vw;
+}
+
+.second span {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: -5vw;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.item {
+    position: relative;
+    height: 100px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.item> :first-child:not(.hand, .heart, .tv, .hs) {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.hand,
+.heart,
+.tv,
+.hs {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hand img,
+.heart img,
+.tv img,
+.hs img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
+}
+
+.FAQ h2 {
+    color: white;
+    margin: 0px 160px;
+}
+
+.QnA {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 160px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 2%;
+    border: 3px solid #141414;
+    border-radius: 20px;
+}
+
+.second {
+    max-width: 100vw;
+    margin: auto;
+    text-align: start;
+    padding: 10px 5%;
+    background-color: #141414;
+}
+
+.second h2 {
+    font-size: 2rem;
+    margin-left: 90px;
+    margin-bottom: -10px;
+    font-weight: 700;
+    display: block;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 80px;
+}
+
+.plus-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    stroke: white;
+    stroke-width: 1.5;
+    transition: transform 0.2s ease;
+}
+
+.plus-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.lower {
+    margin: 40px 0px 20px;
+}
+
+.lower> :nth-child(1) {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.lower input {
+    background-color: rgb(123 123 123);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    padding: 10px 110px 10px 20px;
+    font-size: 15px;
+    border-radius: 44px;
+    font-weight: 600;
+    color: white;
+}
+
+.lower input::placeholder {
+    color: #ccc;
+}
+
+.footer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    color: #757575;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-btn {
+    background: transparent;
+    color: #757575;
+    border: 1px solid #757575;
+    padding: 8px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.language-btn:hover {
+    color: white;
+    border-color: white;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .main,
+    .first,
+    .container {
+        max-width: 95%;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 45px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 24px;
+    }
+
+    .QnA,
+    .FAQ h2 {
+        margin: 0px 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 120px;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 35px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 20px;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-buttons input,
+    .hero-buttons .btn-red {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .first span {
+        font-size: 20px;
+    }
+
+    .movie-card {
+        height: 200px;
+        width: 100px;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        padding: 20px 15px;
+    }
+
+    .QnA,
+    .FAQ h2 {
+        margin: 0px 20px;
+    }
+
+    .container {
+        margin: 0px 20px;
+        flex-direction: column;
+    }
+
+    .second h2 {
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 28px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .btn-red {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    .main input,
+    .lower input {
+        padding: 10px 20px;
+    }
+
+    .movie-card {
+        height: 180px;
+        width: 90px;
+    }
+
+    .movie-card span {
+        font-size: 45px;
+        top: -10px;
+        left: -15px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links div {
+        align-items: center;
+    }
+}
+
+/* Fix horizontal scrolling issues */
+.cont {
+    margin: 10px 0;
+    padding: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.cont::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
